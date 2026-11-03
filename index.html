@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f7">
+  <title>Alejandro Cespón Ferriol | AI/ML Researcher</title>
+  <meta name="description" content="Alejandro Cespón Ferriol, AI/ML researcher and PhD student at the University of Granada, DaSCI. Explainable AI, distributed learning, and research software.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23bb3525'/%3E%3Ctext x='12' y='46' fill='white' font-family='Arial' font-weight='700' font-size='40'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap header">
+    <a class="wordmark" href="#top" aria-label="Alejandro Cespón Ferriol home">
+      <span class="monogram" aria-hidden="true">acf.</span>
+      <span>Research &amp;<br>engineering</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#research">Publications</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="location-mark" aria-hidden="true"></span> Granada, Spain / University of Granada</p>
+        <h1 id="intro">Alejandro<br>Cespón Ferriol<span class="name-period">.</span></h1>
+        <p class="hero-role">AI/ML Researcher</p>
+        <p class="intro">Making machine learning more <strong>understandable</strong>, from distributed optimization to language model representations.</p>
+        <p class="affiliation">PhD student at the University of Granada.<br>Researcher at <a href="https://dasci.es/investigador/alejandro-cespon-ferriol/">DaSCI <span aria-hidden="true">↗</span></a></p>
+        <div class="actions">
+          <a class="button" href="#work">Selected work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="assets/Alejandro_Cespon_CV_AI_ML_EN.pdf">Read my CV <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <figure class="research-figure">
+        <div class="figure-heading"><span>Research sketch / 01</span><span>ADMM</span></div>
+        <svg class="consensus-diagram" viewBox="0 0 440 330" role="img" aria-labelledby="consensus-title consensus-desc">
+          <title id="consensus-title">Local models, shared consensus</title>
+          <desc id="consensus-desc">Three local optimization nodes exchange model updates with a shared consensus variable z. ADMM alternates local optimization, consensus, and dual updates.</desc>
+          <defs>
+            <pattern id="diagram-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+              <path d="M 22 0 H 0 V 22" fill="none" stroke="#e3e7ea" stroke-width="1"/>
+            </pattern>
+            <marker id="arrow-ink" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 8 4 L 0 8 Z" fill="#313a42"/>
+            </marker>
+            <marker id="arrow-red" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M 0 0 L 8 4 L 0 8 Z" fill="#bb3525"/>
+            </marker>
+          </defs>
+          <rect x="0" y="0" width="440" height="330" fill="url(#diagram-grid)"/>
+          <g fill="none" stroke="#313a42" stroke-width="1.5" marker-end="url(#arrow-ink)">
+            <path d="M 97 111 L 178 170"/>
+            <path d="M 220 100 V 149"/>
+            <path d="M 343 111 L 262 170"/>
+          </g>
+          <g fill="none" stroke="#bb3525" stroke-width="1.5" stroke-dasharray="4 5" marker-end="url(#arrow-red)">
+            <path d="M 177 197 C 101 203 65 173 65 116"/>
+            <path d="M 263 197 C 339 203 375 173 375 116"/>
+            <path d="M 245 151 C 272 128 269 106 249 89"/>
+          </g>
+          <g fill="#fff" stroke="#313a42" stroke-width="1.5">
+            <rect x="31" y="47" width="100" height="64" rx="3"/>
+            <rect x="170" y="27" width="100" height="64" rx="3"/>
+            <rect x="309" y="47" width="100" height="64" rx="3"/>
+          </g>
+          <g class="svg-label" text-anchor="middle" fill="#20272d">
+            <text x="81" y="73">LOCAL 01</text>
+            <text x="220" y="53">LOCAL 02</text>
+            <text x="359" y="73">LOCAL 03</text>
+          </g>
+          <g class="svg-math" text-anchor="middle" fill="#20272d">
+            <text x="81" y="97">x₁</text>
+            <text x="220" y="77">x₂</text>
+            <text x="359" y="97">x₃</text>
+          </g>
+          <circle cx="220" cy="193" r="43" fill="#20272d"/>
+          <text x="220" y="202" class="svg-consensus" text-anchor="middle" fill="#fff">z</text>
+          <text x="220" y="260" class="svg-label" text-anchor="middle" fill="#20272d">SHARED CONSENSUS</text>
+          <path d="M 43 290 H 67" stroke="#313a42" stroke-width="1.5"/>
+          <text x="76" y="294" class="svg-label" fill="#4e5b65">Model updates</text>
+          <path d="M 245 290 H 269" stroke="#bb3525" stroke-width="1.5" stroke-dasharray="4 5"/>
+          <text x="278" y="294" class="svg-label" fill="#4e5b65">Consensus feedback</text>
+        </svg>
+        <figcaption><span class="figure-number">Fig. 01</span><span>Local objectives. A shared solution.<br><em>A conceptual view of distributed optimization.</em></span></figcaption>
+        <div class="figure-process"><span>01 Optimize</span><span>02 Aggregate</span><span>03 Update</span></div>
+      </figure>
+
+      <div class="focus-strip" aria-label="Research areas">
+        <span>Explainable AI</span>
+        <span>Distributed learning</span>
+        <span>Language models</span>
+        <span>Research software</span>
+      </div>
+    </section>
+
+    <section id="work" class="wrap section work-section" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Questions into <em>code.</em></h2></div>
+        <p>Four research and software cases.<br>From model behaviour to useful interfaces.</p>
+      </div>
+      <div class="project-filters" data-project-filters hidden role="group" aria-label="Filter projects">
+        <button type="button" data-filter="all" aria-pressed="true">All work</button>
+        <button type="button" data-filter="xai" aria-pressed="false">Explainability</button>
+        <button type="button" data-filter="anomaly" aria-pressed="false">Anomaly detection</button>
+        <button type="button" data-filter="protein" aria-pressed="false">Protein models</button>
+        <button type="button" data-filter="language" aria-pressed="false">Language models</button>
+        <span class="filter-status" data-project-status role="status" aria-live="polite">4 projects shown</span>
+      </div>
+
+      <article class="project project-featured" data-project-topics="xai" aria-labelledby="icu-title">
+        <div class="project-copy">
+          <p class="project-kicker"><span>01</span> Healthcare / Explainable AI</p>
+          <h3 id="icu-title">An inspectable view<br>of intensive care predictions.</h3>
+          <p>Intensive Care Hidden Mortality brings classification experiments, feature attributions, and LLM-generated explanations into a Streamlit interface.</p>
+          <p class="project-method">Classification notebooks explore sampling configurations; the interface presents predicted probabilities alongside attribution plots and generated narratives. A research prototype for examining model behaviour.</p>
+          <ul class="tags" aria-label="Technologies"><li>Python</li><li>PyTorch</li><li>Streamlit</li><li>XAI</li></ul>
+          <a class="project-link" href="https://github.com/acferriol/Intensive-Care-Hidden-Mortality">Explore repository <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="project-figure clinical-figure">
+          <div class="figure-heading"><span>System view</span><span>ICU / XAI</span></div>
+          <svg viewBox="0 0 400 255" role="img" aria-labelledby="icu-svg-title icu-svg-desc">
+            <title id="icu-svg-title">Prediction and explanation interface</title>
+            <desc id="icu-svg-desc">Classification experiments provide predictions. Feature attribution and generated narratives accompany them in an inspection interface. This is a system diagram, not clinical data.</desc>
+            <g fill="none" stroke="#75818b" stroke-width="1.5">
+              <path d="M 200 65 V 100 M 90 100 H 310 M 90 100 V 124 M 310 100 V 124 M 90 175 V 200 H 310 V 175 M 200 200 V 220"/>
+            </g>
+            <rect x="100" y="18" width="200" height="47" fill="#20272d"/>
+            <text x="200" y="38" text-anchor="middle" class="svg-label" fill="#fff"><tspan x="200">CLASSIFICATION</tspan><tspan x="200" dy="16">EXPERIMENTS</tspan></text>
+            <text x="215" y="88" text-anchor="start" class="svg-label" fill="#4e5b65">Predicted probabilities</text>
+            <rect x="16" y="124" width="148" height="51" fill="#fff" stroke="#75818b"/>
+            <rect x="236" y="124" width="148" height="51" fill="#fff" stroke="#75818b"/>
+            <text x="90" y="145" text-anchor="middle" class="svg-label" fill="#20272d"><tspan x="90">FEATURE</tspan><tspan x="90" dy="16">ATTRIBUTION</tspan></text>
+            <text x="310" y="145" text-anchor="middle" class="svg-label" fill="#20272d"><tspan x="310">GENERATED</tspan><tspan x="310" dy="16">NARRATIVE</tspan></text>
+            <rect x="100" y="220" width="200" height="32" fill="#bb3525"/>
+            <text x="200" y="241" text-anchor="middle" class="svg-label" fill="#fff">INSPECTION INTERFACE</text>
+          </svg>
+          <figcaption>Prediction / attribution / explanation</figcaption>
+        </figure>
+      </article>
+
+      <article class="project project-row" data-project-topics="anomaly" aria-labelledby="admm-title">
+        <div class="project-identity">
+          <p class="project-kicker"><span>02</span> Distributed learning</p>
+          <div class="technical-mark admm-mark" aria-hidden="true"><span>x₁</span><span>x₂</span><span>x₃</span><b>z</b></div>
+          <p class="identity-caption">Local models → consensus</p>
+        </div>
+        <div class="project-copy">
+          <h3 id="admm-title">One-class learning,<br>across distributed data.</h3>
+          <p>Distributed and federated anomaly detection with one-class models and the alternating direction method of multipliers (ADMM).</p>
+          <p class="project-method">Two complementary research repositories: a federated outlier detection framework and One-Class SVM research code. The latter connects to the <a href="https://doi.org/10.14313/jamris-2025-009">2025 JAMRIS paper</a>.</p>
+          <ul class="tags" aria-label="Methods"><li>ADMM</li><li>One-class SVM</li><li>Federated learning</li></ul>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/acferriol/fed-admm-oc">Federated framework <span aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/cii-uclv/I-One-Class-SVM">One-Class SVM <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project project-row" data-project-topics="protein language xai" aria-labelledby="protein-title">
+        <div class="project-identity">
+          <p class="project-kicker"><span>03</span> Bioinformatics / XAI</p>
+          <div class="technical-mark protein-mark" aria-hidden="true"><span>SEQUENCE</span><b>h₁ h₂ ··· hₙ</b><span>REPRESENTATION</span></div>
+          <p class="identity-caption">ProtFlash / ProtT5</p>
+        </div>
+        <div class="project-copy">
+          <h3 id="protein-title">Reading biological sequences<br>through representations.</h3>
+          <p>Collaborative AI and bioinformatics research on enzymes and bioactive peptides, with protein language models and explainable classification.</p>
+          <p class="project-method">The shared repository brings together data preparation and ProtFlash and ProtT5 subprojects. Related publications examine an explainable ProtFlash workflow and compare protein embeddings for antimicrobial peptide classification.</p>
+          <ul class="tags" aria-label="Methods"><li>ProtFlash</li><li>ProtT5</li><li>Protein embeddings</li><li>XAI</li></ul>
+          <a class="project-link" href="https://github.com/cii-uclv/I-IA-AA-Analysis">Explore collaborative repository <span aria-hidden="true">↗</span></a>
+          <div class="related-papers" aria-label="Related bioinformatics publications">
+            <span>Related papers</span>
+            <a href="https://rcci.uci.cu/index.php/RCCI/article/view/13245">Explainable ProtFlash workflow · RCCI 2026 <span aria-hidden="true">↗</span></a>
+            <a href="https://doi.org/10.1007/978-3-032-41324-6_12">ProtFlash / ProtT5 comparison · Springer <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project project-row" data-project-topics="language" aria-labelledby="chatbot-title">
+        <div class="project-identity">
+          <p class="project-kicker"><span>04</span> Language model applications</p>
+          <div class="technical-mark retrieval-mark" aria-hidden="true"><span>01 / Retrieve</span><span>02 / Contextualize</span><b>03 / Respond ↗</b></div>
+          <p class="identity-caption">Documents → conversation</p>
+        </div>
+        <div class="project-copy">
+          <h3 id="chatbot-title">University knowledge,<br>in the conversation.</h3>
+          <p>A retrieval-augmented chatbot for university information, combining a document knowledge base with local language model inference.</p>
+          <p class="project-method">Text loading and chunking, Ollama embeddings, Chroma similarity search, and context injection support a Streamlit conversation interface. Built as a demonstration application.</p>
+          <ul class="tags" aria-label="Technologies"><li>LangChain</li><li>Ollama</li><li>Chroma</li><li>Streamlit</li></ul>
+          <a class="project-link" href="https://github.com/acferriol/uclv-chatbot">Explore repository <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="research" class="research-section" aria-labelledby="research-title">
+      <div class="wrap section">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / Research record</p><h2 id="research-title">Selected <em>publications.</em></h2></div>
+          <div class="research-profiles">
+            <a class="text-link" href="https://orcid.org/0000-0002-8584-6958">ORCID <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://scholar.google.com/citations?user=UhD9jYsAAAAJ&amp;hl=es">Google Scholar <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <ol class="publications">
+          <li class="publication">
+            <div class="publication-date">2026<span>Journal article</span></div>
+            <div class="publication-body">
+              <p class="publication-venue">Revista Cubana de Ciencias Informáticas · 20(3), 65–82</p>
+              <h3 lang="es"><a href="https://rcci.uci.cu/index.php/RCCI/article/view/13245">Flujo explicable para clasificar péptidos antimicrobianos con modelo pequeño de lenguaje de proteínas <span aria-hidden="true">↗</span></a></h3>
+              <p class="publication-note">Fernández Quintero et al.</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-date">2026<span>Online · print 2027</span></div>
+            <div class="publication-body">
+              <p class="publication-venue">Springer · pp. 142–159</p>
+              <h3><a href="https://doi.org/10.1007/978-3-032-41324-6_12">A Comparative Study of ProtFlash and ProtT5 Embeddings for Antimicrobial Peptide Classification with Explainable AI <span aria-hidden="true">↗</span></a></h3>
+              <p class="publication-note">Fernández Marín et al. · Online 2026, print 2027</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-date">2025<span>Journal article</span></div>
+            <div class="publication-body">
+              <p class="publication-venue">JAMRIS · 19(2), 1–7</p>
+              <h3><a href="https://doi.org/10.14313/jamris-2025-009">Development of a Distributed Outlier Detection Method Based on The Alternating Direction Method of Multipliers <span aria-hidden="true">↗</span></a></h3>
+              <p class="publication-note">Support vector data description with ADMM</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-date">WEA 2025<span>Online 2025 · vol. 2026</span></div>
+            <div class="publication-body">
+              <p class="publication-venue">Springer · CCIS 2702, Part II · pp. 271–282</p>
+              <h3><a href="https://doi.org/10.1007/978-3-032-08206-0_23">Heuristic-Boosted Ejection Fraction Estimation from 2D U-Net Segmentation <span aria-hidden="true">↗</span></a></h3>
+              <p class="publication-note">Medical image analysis</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-date">2025<span>22 July · Journal article</span></div>
+            <div class="publication-body">
+              <p class="publication-venue">Revista Cubana de Ciencias Informáticas · 19(2)</p>
+              <h3><a href="https://rcci.uci.cu/index.php/RCCI/article/view/13046">Intelligent Decision Support System for Intensive Care Units</a></h3>
+              <p class="publication-note">Alejandro Cespón Ferriol, Ana Isabel Portal, Jorge Alain Caballero Font, Deborah R Galpert Canizares, María Matilde García Lorenzo, Armando Caballero Lopez.</p>
+              <p class="publication-summary">Binary survival classification using data from Hospital Arnaldo Milian Castro. The study compared logistic regression, KNN and multilayer perceptrons with Random Oversampling and SMOTE, hyperparameter optimization, and evaluation using F1, recall and AUC-ROC. It reported the best results with a multilayer perceptron after Random Oversampling and used LIME for local explanations.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="about" class="wrap section about-section" aria-labelledby="about-title">
+      <div class="about-copy">
+        <p class="eyebrow">03 / Background</p>
+        <h2 id="about-title">Mathematical roots.<br><em>Software foundations.</em></h2>
+        <p>I am a PhD student at the University of Granada and a researcher at DaSCI. My work connects explainable AI and language models with a background in distributed optimization and anomaly detection.</p>
+        <p>Alongside research, my experience includes REST API development, data processing, and university teaching. I am interested in applied AI/ML, research engineering, and data science roles that turn experiments into useful software.</p>
+        <p>I also use OpenCode as a coding agent, together with Model Context Protocol (MCP) integrations, reusable skills and agent harnesses, as part of my development workflow.</p>
+        <a class="text-link" href="https://dasci.es/investigador/alejandro-cespon-ferriol/">University research profile <span aria-hidden="true">↗</span></a>
+      </div>
+      <dl class="expertise">
+        <div><dt>Modelling &amp; analysis</dt><dd>Python · PyTorch · scikit-learn<br>pandas · NumPy</dd></div>
+        <div><dt>Language model applications</dt><dd>LangChain · LangGraph<br>Retrieval-augmented generation</dd></div>
+        <div><dt>Software &amp; data</dt><dd>SQL · PostgreSQL · Django<br>REST APIs · Docker · Git</dd></div>
+        <div><dt>Agent-assisted development</dt><dd>OpenCode · Model Context Protocol (MCP)<br>Skills · Agent harnesses</dd></div>
+        <div><dt>Education</dt><dd>PhD studies · University of Granada<br>MSc &amp; BSc in Computer Science · UCLV</dd></div>
+      </dl>
+    </section>
+
+    <section id="certifications" class="certification-section" aria-labelledby="certifications-title">
+      <div class="wrap section">
+        <div class="section-heading">
+          <div><p class="eyebrow">04 / Continued learning</p><h2 id="certifications-title">Selected <em>certifications.</em></h2></div>
+          <p>Additional training in machine learning,<br>research tools and automation.</p>
+        </div>
+        <ol class="certification-list">
+          <li><span class="certification-year">2026</span><div><h3>Robocorp Automation Level I</h3><p>Robocorp</p></div></li>
+          <li><span class="certification-year">2025</span><div><h3>Writing scientific texts with LaTeX and version control with Git</h3><p>University of Granada</p></div></li>
+          <li><span class="certification-year">2024</span><div><h3>Intermediate Machine Learning</h3><p>Kaggle</p></div></li>
+          <li><span class="certification-year">2024</span><div><h3>Intro to Deep Learning</h3><p>Kaggle</p></div></li>
+          <li><span class="certification-year">2024</span><div><h3>Data Visualization</h3><p>Kaggle</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="wrap contact">
+        <div><p class="eyebrow">05 / Contact</p><h2 id="contact-title">A useful problem.<br><em>A rigorous approach.</em></h2></div>
+        <div class="contact-details">
+          <p>For applied AI/ML opportunities<br>and research collaborations.</p>
+          <a class="contact-email" href="mailto:cesponalejandro@gmail.com">cesponalejandro@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-links">
+            <button type="button" class="copy-email" data-copy-email hidden>Copy email</button>
+            <a href="https://www.linkedin.com/in/alejandro-cespon-b36771209/">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/acferriol">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="assets/Alejandro_Cespon_CV_AI_ML_EN.pdf">CV / PDF <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="contact-status" data-contact-status role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>© 2026 Alejandro Cespón Ferriol</span>
+    <span>Granada, Spain · Research &amp; engineering</span>
+    <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
